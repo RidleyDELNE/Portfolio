@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="carte">
+    <header class="carte-entete">
+      <h1 id="nom">Chargement...</h1>
+      <p id="titre"></p>
+    </header>
+
+    <section class="carte-contact">
+      <p id="telephone"></p>
+      <p id="email"></p>
+      <p id="linkedin"></p>
+      <p id="adresse"></p>
+    </section>
+  </main>
+
+  <section class="projets">
+    <h2>Projets</h2>
+    <div id="liste-projets"></div>
+  </section>
+
+  <section class="contact">
+    <h2>Me contacter</h2>
+    <form id="form-contact">
+      <label for="nom-visiteur">Nom</label>
+      <input type="text" id="nom-visiteur" required>
+
+      <label for="email-visiteur">Email</label>
+      <input type="email" id="email-visiteur" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <p id="retour-contact"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
